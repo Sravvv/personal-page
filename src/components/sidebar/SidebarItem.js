@@ -6,7 +6,7 @@ import './Sidebar.css'
 function SidebarItem(props) {
     const {active, title, ...otherProps} = props;
     return (
-        <Row className={('sbItemActiveContainer' && active) ? 'sbItemActiveContainer' : 'sbItemContainer'} vertical="center" {...otherProps}>
+        <Row className={active ? 'sbItemActiveContainer' : 'sbItemContainer'} vertical="center" {...otherProps}>
             {active && <div className="sbItemActiveBar"></div>}
             <span className="sbItemTitle">{title}</span>
         </Row>

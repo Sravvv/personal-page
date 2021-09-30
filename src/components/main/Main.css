@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+.mainContent {
+    margin-top: 54px;
+}
+
+.divActive {
+    display: block;
+}
+
+.divInactive {
+    display: none;
+}

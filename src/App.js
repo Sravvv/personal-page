@@ -3,6 +3,7 @@ import { Column, Row } from 'simple-flexbox';
 import './App.css';
 import Sidebar from './components/sidebar/Sidebar';
 import Header from './components/header/Header';
+import Main from './components/main/Main'
 
 class App extends React.Component {
   state = { current: 'Landing' };
@@ -13,9 +14,7 @@ class App extends React.Component {
         <Sidebar current={current} onChange={(current) => this.setState({ current })} />
         <Column flexGrow={1} className="appMain">
           <Header title={current} />
-          <div className="appContent">
-            <span>Content</span>
-          </div>
+          <Main current={current} />
         </Column>
       </Row>
     );
