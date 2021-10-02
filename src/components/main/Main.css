@@ -5,6 +5,7 @@
 }
 
 .divActive {
+    margin-left: 16px;
     display: block;
 }
 
@@ -12,3 +13,4 @@
     display: none;
 }
 
+.react-pdf__Page__textContent {display: none;}
